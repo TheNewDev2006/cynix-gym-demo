@@ -4,7 +4,7 @@
 <head>
     <title>PowerFlow - Gym Fitness and Yoga HTML Template</title>
     <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" >
     <meta content="PowerFlow - Gym Fitness and Yoga HTML Template" name="description" >
     <meta content="" name="keywords" >
@@ -12,11 +12,11 @@
     <!-- CSS Files
     ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
     <link href="css/style.css" rel="stylesheet" type="text/css" >
-    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <!-- color scheme -->
-    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     
     <!-- Vercel Analytics -->
 
@@ -24,9 +24,9 @@
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="Cynix Inc">
     <meta property="og:description" content="Your premier fitness destination in Sri Lanka">
-    <meta property="og:image" content="images/background/3.webp">
+    <meta property="og:image" content="https://cynix-gym-demo.vercel.app/images/background/3.webp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://cynix-gym-demo.vercel.app/">
     <meta name="twitter:card" content="summary_large_image">
 
 </head>
@@ -89,7 +89,7 @@
 
         <section aria-label="section" class="relative jarallax p-0 overflow-hidden">
             <div class="gradient-edge-bottom z-4"></div>
-            <img src="images/background/4.webp" class="jarallax-img" alt="">
+            <img src="images/background/4.webp" class="jarallax-img" fetchpriority="high" alt="">
                 <div class="mh-800">
                     <div class="container">
                         <div class="row relative justify-content-center z-2">
@@ -101,7 +101,7 @@
                             </div>
 
                             <div class="col-lg-8 text-center order-lg-1 order-sm-2">
-                                <img src="images/misc/c1.webp" class="w-100" alt="" data-top="transform: translateY(0px);" data-top-bottom="transform: translateY(500px);">
+                                <img src="images/misc/c1.webp" class="w-100" width="1800" height="1729" loading="lazy" alt="" data-top="transform: translateY(0px);" data-top-bottom="transform: translateY(500px);">
                             </div>                            
 
                             <div class="col-lg-2 order-lg-2 order-sm-1">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-            <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay="1.6s">
+            <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay="1.6s" aria-label="Scroll to about section">
                 <span class="mouse fadeScroll relative" data-scroll-speed="10">
                     <span class="scroll"></span>
                 </span>
@@ -164,7 +164,7 @@
                     <div class="col-lg-6">
                         <div class="row g-4 g">
                             <div class="col-6">
-                                <img src="images/misc/s2.webp" class="img-fluid rounded-1 mb-4 wow scaleIn" alt="">
+                                <img src="images/misc/s2.webp" class="img-fluid rounded-1 mb-4 wow scaleIn" width="500" height="500" loading="lazy" alt="">
                                 <div class="col-12 text-center">
                                     <div class="bg-dark-3 text-light px-4 py-4 rounded-1 wow fadeInLeft">
                                         <div class="de_count">
@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="images/misc/s3.webp" class="img-fluid rounded-1 mt-4 wow scaleIn" alt="">
+                                <img src="images/misc/s3.webp" class="img-fluid rounded-1 mt-4 wow scaleIn" width="500" height="500" loading="lazy" alt="">
                             </div>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
 
                 <div class="spacer-single"></div>
 
-                <div class="row g-4">
+                <div class="row g-4 mobile-scroll-container">
                     <div class="col-md-3">
                         <div class="relative">
                             <i class="fa fa-heartbeat fs-1 id-color mb-3"></i>
@@ -237,7 +237,7 @@
                         <p>Flexible membership options for every lifestyle, from single sessions to full packages with world-class facilities.</p>
                     </div>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 mobile-scroll-container">
 
                     <!-- pricing item begin -->
                     <div class="col-md-4 wow fadeInUp" data-wow-delay=".0s">
@@ -346,11 +346,11 @@
                     <div class="col-lg-6">
                         <div class="relative">
                             <div class="rounded-1 w-90 overflow-hidden wow zoomIn">
-                                <img src="images/misc/l4.webp" class="w-100 wow scaleIn" alt="Gym Training Session">
+                                <img src="images/misc/l4.webp" class="w-100 wow scaleIn" width="1000" height="667" loading="lazy" alt="Gym Training Session">
                                 <div class="gradient-edge-bottom color abs w-100 h-40 bottom-0"></div>
                             </div>
                             <div class="rounded-1 w-50 abs mb-min-50 end-0 bottom-0 z-2 overflow-hidden shadow-soft wow zoomIn" data-wow-delay=".2s">
-                                <img src="images/misc/s1.webp" class="w-100 wow scaleIn" data-wow-delay=".2s" alt="Personal Coaching Session">
+                                <img src="images/misc/s1.webp" class="w-100 wow scaleIn" data-wow-delay=".2s" width="500" height="750" loading="lazy" alt="Personal Coaching Session">
                                 <div class="gradient-edge-bottom color abs w-100 h-40 bottom-0"></div>
                             </div>
                         </div>
@@ -423,12 +423,12 @@
                             <!-- classes item begin -->
                             <div class="item">
                                 <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                                    <img src="images/classes/l1.webp" class="hover-scale-1-1 w-100" alt="">
+                                    <img src="images/classes/l1.webp" class="hover-scale-1-1 w-100" width="2000" height="1271" loading="lazy" alt="">
                                     <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                         <div class="mb-3">Build power, endurance, and a lean physique with a combination of barbell, dumbbell, and functional training techniques.</div>
                                         <a class="btn-line" href="class-single.html">View Details</a>
                                     </div>
-                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" width="1022" height="691" loading="lazy" alt="">
                                     <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                     <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                                         <h4 class="mb-3">Strength & Conditioning</h4>
@@ -442,12 +442,12 @@
                             <!-- classes item begin -->
                             <div class="item">
                                 <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                                    <img src="images/classes/l2.webp" class="hover-scale-1-1 w-100" alt="">
+                                    <img src="images/classes/l2.webp" class="hover-scale-1-1 w-100" width="2000" height="1271" loading="lazy" alt="">
                                     <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                         <div class="mb-3">One-on-one guidance from professional trainers to maximize your results safely and efficiently with tailored programs.</div>
                                         <a class="btn-line" href="class-single.html">View Details</a>
                                     </div>
-                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" width="1022" height="691" loading="lazy" alt="">
                                     <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                     <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                                         <h4 class="mb-3">Personal Training</h4>
@@ -461,12 +461,12 @@
                             <!-- classes item begin -->
                             <div class="item">
                                 <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                                    <img src="images/classes/l3.webp" class="hover-scale-1-1 w-100" alt="">
+                                    <img src="images/classes/l3.webp" class="hover-scale-1-1 w-100" width="2000" height="1271" loading="lazy" alt="">
                                     <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                         <div class="mb-3">Join high-energy group workouts like HIIT, spinning, and bootcamps to burn calories, build stamina, and stay motivated.</div>
                                         <a class="btn-line" href="class-single.html">View Details</a>
                                     </div>
-                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" width="1022" height="691" loading="lazy" alt="">
                                     <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                     <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                                         <h4 class="mb-3">HIIT & Group Training</h4>
@@ -480,12 +480,12 @@
                             <!-- classes item begin -->
                             <div class="item">
                                 <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                                    <img src="images/classes/l4.webp" class="hover-scale-1-1 w-100" alt="">
+                                    <img src="images/classes/l4.webp" class="hover-scale-1-1 w-100" width="2000" height="1271" loading="lazy" alt="">
                                     <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                         <div class="mb-3">Improve flexibility, reduce stress, and enhance body control with calming yoga and pilates sessions led by certified instructors.</div>
                                         <a class="btn-line" href="class-single.html">View Details</a>
                                     </div>
-                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" width="1022" height="691" loading="lazy" alt="">
                                     <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                     <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                                         <h4 class="mb-3">Yoga & Pilates</h4>
@@ -499,12 +499,12 @@
                             <!-- classes item begin -->
                             <div class="item">
                                 <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                                    <img src="images/classes/l5.webp" class="hover-scale-1-1 w-100" alt="">
+                                    <img src="images/classes/l5.webp" class="hover-scale-1-1 w-100" width="2000" height="1271" loading="lazy" alt="">
                                     <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                         <div class="mb-3">Ignite your metabolism with intense circuit training that blends cardio and strength to deliver total-body results fast.</div>
                                         <a class="btn-line" href="class-single.html">View Details</a>
                                     </div>
-                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" width="1022" height="691" loading="lazy" alt="">
                                     <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                     <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                                         <h4 class="mb-3">Circuit Training</h4>
@@ -518,12 +518,12 @@
                             <!-- classes item begin -->
                             <div class="item">
                                 <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                                    <img src="images/classes/l6.webp" class="hover-scale-1-1 w-100" alt="">
+                                    <img src="images/classes/l6.webp" class="hover-scale-1-1 w-100" width="2000" height="1271" loading="lazy" alt="">
                                     <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                         <div class="mb-3">Train like an athlete with explosive power drills, balance routines, and mobility work to boost speed and agility.</div>
                                         <a class="btn-line" href="class-single.html">View Details</a>
                                     </div>
-                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                                    <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" width="1022" height="691" loading="lazy" alt="">
                                     <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                     <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                                         <h4 class="mb-3">Athletic Performance</h4>
@@ -554,7 +554,7 @@
                         <p>Check our weekly schedule to plan your workouts, from morning yoga to evening strength training sessions.</p>
                     </div>
                 </div>
-                <div class="row g-2 text-center">
+                <div class="row g-2 text-center mobile-scroll-container">
                     <!-- Sunday -->
                     <div class="col-lg-1-7 mb-sm-30 text-light wow fadeInUp" data-wow-delay=".0s">
                         <div class="bg-color text-light text-center py-3 mb-2 rounded-1">
@@ -965,11 +965,11 @@
                     <p>Transform your lifestyle with our expert gym services! From strength training to group classes, we help you achieve your fitness goals with personalized, results-driven programs. Professional, reliable, and passionate about your health—let us guide you to a stronger, healthier you.</p>
 
                     <div class="social-icons mb-sm-30">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
